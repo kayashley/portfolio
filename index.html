@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <title>Kayla C - Portfolio</title>
+        <link rel="shortcut icon" href="favicon.icon" type="image/x-icon">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        
+            <!-- logo image here -->
+            <!-- <img src="img/kayla-logo.png" alt="Logo" class="logo"> -->
+            <!-- navbar -->
+            <!-- <nav class="nav-bar"> -->
+                <!-- home -->
+                <!-- <a href="index.html" class="nav-list">Home</a> -->
+                <!-- about -->
+                <!-- <a href="about.html" class="nav-list">About</a> -->
+                <!-- projects -->
+                <!-- <a href="projects.html" class="nav-list">Projects</a> -->
+                <!-- contact -->
+                <!-- <a href="contact.html" class="">Contact</a> -->
+            <!-- </nav> -->
+
+            <header class="page-header">
+                <div id="navbar">
+                    <a id="logo" href="index.html">KAYLA CHAN</a>
+                    <div id="navbar-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Me</a>
+                        <a href="projects.html">My Projects</a>
+                        <a class="active" href="contact.html">Contact Me</a>
+                    </div>
+                </div>
+            </header>
+
+        <script>
+            window.onscroll = function() {scrollFunction()}
+        
+            function scrollFunction() {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    document.getElementById("navbar").style.padding = "30px 10px";
+                    document.getElementById("logo").style.fontSize = "25px";
+                } else {
+                    document.getElementById("navbar").style.padding = "80px 10px";
+                    document.getElementById("logo").style.fontSize = "35px";
+                }
+            }
+        </script>
+
+        <div class="index">
+
+        <img src="img/portrait.jpg" class="profile-portrait" alt="photo-of-kayla">
+
+        
+            <h1 class="index-h1">Hello World!</h1>
+           
+            
+            <p class="index-intro">
+                My name is Kayla.
+                I am a <span>web</span> developer from Boston, MA.
+                try. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet
+            
+                <br>
+                <br>
+                <br>
+                <a href="https://github.com/kayashley" target="_blank">
+                    <em>↠ Check out some of my code</em>
+                </a>
+            </p>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <p>Find me on</p>
+                <!-- github -->
+                <a href="https://github.com/kayashley"><img src="img/github.svg" alt="GitHub" width="30" height="30"></a>
+                <!-- Twitter -->
+                <a href="https://twitter.com/"><img src="img/twitter.svg" alt="Twitter" width="30" height="30"></a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/kayla-chan-yftydtfk"><img src="img/linkedin.svg" alt="LinkedIn" width="30" height="30"></a>
+            </div>
+        </footer>
+    </body>
+</html>

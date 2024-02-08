@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto&display=swap");
+
+:root {
+  --primary-color: #a997c3;
+  --secondary-color: #ffff;
+  --tertiary-color: #7b60a1;
+  --quaternary-color: #8e7d9e;
+  --fifth-color: #5c476f;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: var(--secondary-color);
+  /* margin: 20px 40px 40px 40px; */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+a:hover {
+  color: #3e2b41;
+}
+
+a:active {
+  color: var(--tertiary-color);
+}
+
+.page-header {
+  margin-bottom: 240px;
+}
+
+/* logo */
+
+/* .logo {
+  width: 12%;
+  padding: 30px;
+  border-radius: 55%;
+} */
+
+/* nav bar */
+
+/* .nav-bar {
+  float: inline-end;
+  display: inline-block;
+  margin-top: 40px;
+} */
+
+/* .nav-list {
+  padding-right: 20px;
+} */
+
+/* sticky navbar */
+
+#navbar {
+  overflow: hidden;
+  background-color: #3e2b41;
+  padding: 40px 10px; /* large padding will shrink on scroll (using js) */
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  margin-left: -10px;
+}
+
+#navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 30px;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+  padding-left: 40px;
+  background-color: #3e2b41;
+}
+
+#navbar a:hover {
+  background-color: var(--tertiary-color);
+  color: white;
+}
+
+#navbar-links {
+  float: right;
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+/* index */
+
+.index-h1 {
+  font-size: 40px;
+  text-shadow: rgb(190, 189, 189) 1px 0 10px;
+}
+
+.index {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  font-size: 16px;
+}
+
+img.profile-portrait {
+  width: 25%;
+  border-radius: 50%;
+  box-shadow: -0.2em -0.3em 0.5em #fffff7, 0 4px 0.5em #fffff7;
+  float: left;
+  margin-right: 40px;
+}
+
+.index-intro {
+  width: 1000px;
+}
+
+/* about */
+
+.about-h1 {
+  font-size: 40px;
+  text-shadow: rgb(190, 189, 189) 1px 0 10px;
+}
+
+.about {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  font-size: 16px;
+}
+
+.about-svg {
+  margin-top: -50px;
+  width: 45%;
+  border-radius: 50%;
+  float: left;
+}
+
+.about-table {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+.about-download {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* svg animation */
+
+@-webkit-keyframes color-change {
+  0% {
+    fill: #8e809c;
+  }
+  100% {
+    fill: #624879;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #8e809c;
+  }
+  100% {
+    fill: #624879;
+  }
+}
+
+.svg-bg-1 {
+  -webkit-animation: 7s color-change infinite;
+  animation: 7s color-change infinite;
+}
+
+.svg-bg-2 {
+  -webkit-animation: 7s color-change infinite;
+  animation: 7s color-change infinite;
+}
+
+/* projects */
+
+.projects-h1 {
+  font-size: 40px;
+  text-align: center;
+  text-shadow: rgb(190, 189, 189) 1px 0 10px;
+}
+
+.main-container {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.grid {
+  display: grid;
+  padding-top: 25px;
+}
+
+.grid-block {
+  border-radius: 10px;
+  box-shadow: -2px -2px 0.5em white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.grid-img {
+  padding: 20px;
+  border-radius: 60px;
+}
+
+.grid-details {
+  font-size: 13px;
+}
+
+.grid-link {
+  color: var(--fifth-color);
+  font-weight: bold;
+}
+
+@supports (display: grid) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 2em;
+    row-gap: 2em;
+    margin: 0;
+  }
+}
+
+.grid-block {
+  background-color: var(--quaternary-color);
+  color: var(--secondary-color);
+  width: auto;
+  min-height: auto;
+  padding: 15px;
+}
+
+/* contact */
+
+.contact-h1 {
+  font-size: 40px;
+  text-align: center;
+  text-shadow: rgb(190, 189, 189) 1px 0 10px;
+}
+
+.contact-form {
+  background-color: var(--quaternary-color);
+  padding: 30px;
+  border-radius: 40px;
+  box-shadow: 2px 2px 0.5em white;
+  width: auto;
+}
+
+.contact-input {
+  height: 30px;
+  border: white;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.contact-message {
+  height: 100px;
+}
+
+.contact-submit {
+  cursor: pointer;
+  border: white;
+  border-radius: 4px;
+  background-color: #5f4a72;
+  padding: 8px;
+  color: var(--secondary-color);
+}
+
+.contact-x {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 16px;
+  font-style: oblique;
+  line-height: 3;
+}
+
+.contact-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  /* border: 1px solid black; */
+  width: 50%;
+  padding-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+
+.contact-child {
+  margin: 10px;
+  padding: 10px;
+  /* border: 1px solid red; */
+}
+
+/* footer */
+
+.footer {
+  display: block;
+  margin-top: 200px;
+  text-align: center;
+}

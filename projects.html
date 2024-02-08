@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <title>Kayla C - Portfolio</title>
+        <link rel="shortcut icon" href="favicon.icon" type="image/x-icon">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <header class="page-header">
+            <div id="navbar">
+                <a id="logo" href="index.html">KAYLA CHAN</a>
+                <div id="navbar-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Me</a>
+                    <a href="projects.html">My Projects</a>
+                    <a class="active" href="contact.html">Contact Me</a>
+                </div>
+            </div>
+        </header>
+
+        <script>
+            window.onscroll = function() {scrollFunction()}
+        
+            function scrollFunction() {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    document.getElementById("navbar").style.padding = "30px 10px";
+                    document.getElementById("logo").style.fontSize = "25px";
+                } else {
+                    document.getElementById("navbar").style.padding = "80px 10px";
+                    document.getElementById("logo").style.fontSize = "35px";
+                }
+            }
+        </script>
+
+        <!-- grid project section -->
+       <main class="main-container">
+        <h1 class="projects-h1">My Projects</h1>
+            <section >
+                <div class="grid">
+                    <div class="grid-block">
+                        <h2>Project 1</h2>
+                        <p>lorem ipsum</p>
+                        <a href="#">project 1</a>
+                    </div>
+                    <div class="grid-block">
+                        <h2>Project 2</h2>
+                        <p>lorem ipsum</p>
+                        <a href="#">project 2</a>
+                    </div>
+                    <div class="grid-block">
+                        <h2>Project 3</h2>
+                        <p>lorem ipsum</p>
+                        <a href="#">project 3</a>
+                    </div>
+                    <div class="grid-block">
+                        <h2 >Meet-Up App</h2>
+                        <p>
+                            The Meet-Up App was designed to help users find events within their cities and visualizing the data using charts. This project focused on building in a react application to create a PWA, while practicing Test-Driven Development (TDD), oAuth2, and Lambda API functions.
+                           
+                            <img src="img/meet-up-app-project.jpeg" class="grid-img" width="500" height="250">
+                            <em class="grid-details">Tech used: React, AWS Lambda, OAuth2, Google Calendar API</em>
+                        </p>
+                        <a href="https://github.com/kayashley/meet-up.git" class="grid-details grid-link" target="_blank">View my repository on GitHub</a>
+                    </div>
+                    <div class="grid-block">
+                        <h2>Project 5</h2>
+                        <p>lorem ipsum</p>
+                        <a href="#">project 5</a>
+                    </div>
+                    <div class="grid-block">
+                        <h2>Project 6</h2>
+                        <p>lorem ipsum</p>
+                        <a href="#">project 6</a>
+                    </div>
+                </div>
+            </section>
+       </main>
+
+       <footer>
+        <div class="footer">
+            <p>Find me on</p>
+            <!-- github -->
+            <a href="https://github.com/kayashley"><img src="img/github.svg" alt="GitHub" width="30" height="30"></a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/"><img src="img/twitter.svg" alt="Twitter" width="30" height="30"></a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/kayla-chan-yftydtfk"><img src="img/linkedin.svg" alt="LinkedIn" width="30" height="30"></a>
+        </div>
+    </footer>
+    </body>
+</html>
