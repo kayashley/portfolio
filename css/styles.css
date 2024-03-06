@@ -167,15 +167,15 @@ img.profile-portrait {
   float: left;
 }
 
-.about-table {
+.about-link {
+  margin-top: 50px;
+  font-size: 15px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 16px;
-}
-
-.about-download {
-  margin-left: auto;
-  margin-right: auto;
+  background-color: var(--fifth-color);
+  padding: 12px;
+  border-radius: 10px;
+  border-style: none;
 }
 
 /* svg animation */
@@ -245,6 +245,8 @@ img.profile-portrait {
 .grid-link {
   color: var(--fifth-color);
   font-weight: bold;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 @supports (display: grid) {
@@ -341,6 +343,6 @@ img.profile-portrait {
 
 .footer {
   display: block;
-  margin-top: 200px;
+  margin-top: 300px;
   text-align: center;
 }
