@@ -125,25 +125,27 @@ a:active {
 .index-h1 {
   font-size: 40px;
   text-shadow: rgb(190, 189, 189) 1px 0 10px;
+  text-align: center;
 }
 
 .index {
   margin-left: auto;
   margin-right: auto;
-  width: 1000px;
   font-size: 16px;
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 img.profile-portrait {
-  width: 25%;
   border-radius: 50%;
   box-shadow: -0.2em -0.3em 0.5em #fffff7, 0 4px 0.5em #fffff7;
-  float: left;
-  margin-right: 40px;
+  width: 30%;
 }
 
 .index-intro {
-  width: 1000px;
+  text-align: center;
+  line-height: 2;
 }
 
 /* about */
@@ -170,8 +172,7 @@ img.profile-portrait {
 .about-link {
   margin-top: 50px;
   font-size: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 45%;
   background-color: var(--fifth-color);
   padding: 12px;
   border-radius: 10px;
@@ -286,65 +287,18 @@ img.profile-portrait {
   text-shadow: rgb(190, 189, 189) 1px 0 10px;
 }
 
-.contact-form {
-  background-color: var(--quaternary-color);
-  padding: 30px;
-  border-radius: 40px;
-  box-shadow: 2px 2px 0.5em white;
-  width: auto;
-}
-
-.contact-input {
-  height: 30px;
-  border: white;
-  border-radius: 4px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 300px;
-}
-
-.contact-message {
-  height: 100px;
-}
-
-.contact-submit {
-  cursor: pointer;
-  border: white;
-  border-radius: 4px;
-  background-color: #5f4a72;
-  padding: 8px;
-  color: var(--secondary-color);
-}
-
-.contact-x {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.contact-info {
+.contact {
+  padding-top: 3%;
   text-align: center;
-  margin-top: 50px;
-  font-size: 16px;
-  font-style: oblique;
-  line-height: 3;
 }
 
-.contact-parent {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  /* border: 1px solid black; */
-  width: 50%;
-  padding-top: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 700px;
+.contact-intro {
+  line-height: 2;
 }
 
-.contact-child {
-  margin: 10px;
-  padding: 10px;
-  /* border: 1px solid red; */
+.contact-img {
+  margin-right: 1%;
+  margin-top: 2%;
 }
 
 /* footer */
