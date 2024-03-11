@@ -159,8 +159,11 @@ img.profile-portrait {
   margin-left: auto;
   margin-right: auto;
   width: 1000px;
-  height: 500px;
   font-size: 16px;
+}
+
+.about-item {
+  line-height: 2;
 }
 
 .about-svg {
@@ -171,9 +174,10 @@ img.profile-portrait {
 }
 
 .about-btn {
-  float: left;
-  margin-left: 30%;
-  margin-top: -6%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1%;
+  text-align: center;
 }
 
 .about-link {
