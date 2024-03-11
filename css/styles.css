@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto&display=swap");
 
 :root {
-  --tertiary-color: #a997c3;
   --primary-color: #ffff;
   --secondary-color: #7b60a1;
+  --tertiary-color: #a997c3;
   --quaternary-color: #8e7d9e;
   --fifth-color: #5c476f;
 }
@@ -18,7 +18,7 @@ body {
   background-color: var(--primary-color);
   font-family: "Inter", sans-serif;
   font-size: 20px;
-  color: var(--secondary-color);
+  color: var(--fifth-color);
   /* margin: 20px 40px 40px 40px; */
 }
 
