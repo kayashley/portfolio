@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto&display=swap");
 
 :root {
-  --primary-color: #a997c3;
-  --secondary-color: #ffff;
-  --tertiary-color: #7b60a1;
+  --tertiary-color: #a997c3;
+  --primary-color: #ffff;
+  --secondary-color: #7b60a1;
   --quaternary-color: #8e7d9e;
   --fifth-color: #5c476f;
 }
@@ -42,26 +42,6 @@ a:active {
 .page-header {
   margin-bottom: 240px;
 }
-
-/* logo */
-
-/* .logo {
-  width: 12%;
-  padding: 30px;
-  border-radius: 55%;
-} */
-
-/* nav bar */
-
-/* .nav-bar {
-  float: inline-end;
-  display: inline-block;
-  margin-top: 40px;
-} */
-
-/* .nav-list {
-  padding-right: 20px;
-} */
 
 /* sticky navbar */
 
@@ -124,7 +104,7 @@ a:active {
 
 .index-h1 {
   font-size: 40px;
-  text-shadow: rgb(190, 189, 189) 1px 0 10px;
+  text-shadow: rgb(224, 205, 231) 1px 0 10px;
   text-align: center;
 }
 
@@ -138,9 +118,9 @@ a:active {
 }
 
 img.profile-portrait {
-  border-radius: 50%;
+  border-radius: 30%;
   box-shadow: -0.2em -0.3em 0.5em #fffff7, 0 4px 0.5em #fffff7;
-  width: 30%;
+  width: 35%;
 }
 
 .index-intro {
@@ -152,7 +132,7 @@ img.profile-portrait {
 
 .about-h1 {
   font-size: 40px;
-  text-shadow: rgb(190, 189, 189) 1px 0 10px;
+  text-shadow: rgb(224, 205, 231) 1px 0 10px;
 }
 
 .about {
@@ -183,10 +163,14 @@ img.profile-portrait {
 .about-link {
   margin-top: 50px;
   font-size: 15px;
-  background-color: var(--fifth-color);
+  background-color: var(--quaternary-color);
   padding: 12px;
   border-radius: 10px;
   border-style: none;
+}
+
+.about-text {
+  color: var(--primary-color);
 }
 
 /* svg animation */
@@ -224,7 +208,7 @@ img.profile-portrait {
 .projects-h1 {
   font-size: 40px;
   text-align: center;
-  text-shadow: rgb(190, 189, 189) 1px 0 10px;
+  text-shadow: #e0cde7 1px 0 10px;
 }
 
 .main-container {
@@ -232,14 +216,19 @@ img.profile-portrait {
   margin-right: 200px;
 }
 
+.project-text {
+  color: var(--primary-color);
+}
+
 .grid {
   display: grid;
   padding-top: 25px;
+  color: var(--primary-color);
 }
 
 .grid-block {
   border-radius: 10px;
-  box-shadow: -2px -2px 0.5em white;
+  box-shadow: -2px -2px 0.5em #cdb9d4;
   font-size: 15px;
   text-align: center;
 }
@@ -294,7 +283,7 @@ img.profile-portrait {
 .contact-h1 {
   font-size: 40px;
   text-align: center;
-  text-shadow: rgb(190, 189, 189) 1px 0 10px;
+  text-shadow: rgb(224, 205, 231) 1px 0 10px;
 }
 
 .contact {
