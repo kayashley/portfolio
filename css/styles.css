@@ -233,6 +233,10 @@ img.profile-portrait {
   text-align: center;
 }
 
+.align {
+  height: 500px;
+}
+
 .grid-img {
   padding: 20px;
   border-radius: 60px;
